@@ -1,0 +1,305 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f7fa;
+  position: relative;
+}
+
+/* 🔥 FADED LOGO BACKGROUND */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("images/logo.png") no-repeat center;
+  background-size: 350px;
+  opacity: 0.05;
+  z-index: -1;
+}
+
+/* ================= NAVBAR ================= */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(10, 37, 64, 0.85);
+  backdrop-filter: blur(10px);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 45px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00c6ff;
+}
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  height: 100vh;
+
+  background: url("images/logo.png") center no-repeat;
+  background-size: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* OVERLAY */
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,123,255,0.6));
+  z-index: 1;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+
+  padding: 40px;
+  border-radius: 15px;
+
+  color: white;
+  animation: fadeUp 1.2s ease;
+}
+
+.hero-content h1 {
+  font-size: 45px;
+}
+
+.hero-content p {
+  margin: 10px 0 20px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  color: white;
+}
+
+.btn.primary:hover {
+  transform: scale(1.08);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.btn.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background: white;
+  color: #007bff;
+}
+
+/* ================= FEATURES ================= */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: white;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+/* ================= ABOUT ================= */
+.about {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.about h2 {
+  margin-top: 30px;
+  color: #0a2540;
+}
+
+/* ================= GALLERY ================= */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ================= CONTACT ================= */
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+/* ================= ORDER PAGE ================= */
+.order-hero {
+  position: relative;
+  height: 100vh;
+
+  background: url("images/logo.png") center no-repeat;
+  background-size: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,123,255,0.6));
+}
+
+/* ORDER BOX */
+.order-box {
+  position: relative;
+  z-index: 2;
+
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  width: 300px;
+}
+
+.order-box input,
+.order-box select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.order-box button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-box button:hover {
+  transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #0a2540;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= MOBILE ================= */
+@media(max-width: 768px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}

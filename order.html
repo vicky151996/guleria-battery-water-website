@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Now - Guleria Battery Water</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ORDER HERO SECTION -->
+<section class="order-hero">
+
+  <!-- DARK OVERLAY -->
+  <div class="overlay"></div>
+
+  <!-- ORDER BOX -->
+  <div class="order-box">
+
+    <h1>Place Your Order</h1>
+    <p>Fast & Reliable Delivery 🚚</p>
+
+    <!-- INPUTS -->
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+
+    <!-- PRODUCT SELECT -->
+    <select id="product">
+      <option value="1L">1 Litre (₹20)</option>
+      <option value="5L">5 Litre (₹80)</option>
+      <option value="20L">20 Litre (₹250)</option>
+    </select>
+
+    <!-- QUANTITY -->
+    <input type="number" id="qty" placeholder="Quantity" min="1">
+
+    <!-- TOTAL -->
+    <p id="total">Total: ₹0</p>
+
+    <!-- BUTTON -->
+    <button id="orderBtn">Order via WhatsApp</button>
+
+  </div>
+
+</section>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
