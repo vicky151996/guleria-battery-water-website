@@ -3,7 +3,7 @@
 A responsive, production-ready enterprise landing page and commercial platform built to showcase products and manage local client operations for a battery water manufacturing utility. 
 
 ## 🚀 Live Demo
-[👉 Click here to view the live website](https://github.io)
+[👉 Click here to view the live website](https://vermillion-pika-d3c808.netlify.app/)
 
 ## 🛠️ Technical Stack
 * **Architecture:** Semantic HTML5, CSS3 Layout Modules
